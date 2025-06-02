@@ -1,36 +1,61 @@
 # sentiment-analysis-on-gojek-app-reviews
 Sentiment Analysis On Gojek App Reviews Using SVM and IndoBERT
 
-# 📱 Sentiment Analysis on Gojek App Reviews
-This project performs sentiment analysis on user reviews of the Gojek app, one of Southeast Asia’s leading super apps. By leveraging natural language processing (NLP) techniques, we analyze user feedback to classify sentiments as positive, negative, or neutral.
+Berikut revisi deskripsi GitHub yang disesuaikan dengan informasi dari kamu (menggunakan SVM + TF-IDF, SVM + word embedding, dan IndoBERT; data dari Kaggle):
 
-# 🚀 Objectives
-- Scrape or collect reviews from the Gojek app (e.g., from Google Play Store).
+---
 
-- Preprocess and clean textual data (e.g., remove stopwords, tokenization, normalization).
+## 📱 Sentiment Analysis on Gojek App Reviews
 
-- Perform exploratory data analysis (EDA) to understand common themes and sentiment distribution.
+This project focuses on performing sentiment analysis on user reviews of the **Gojek app**, using a dataset sourced from Kaggle: [Gojek Play Store Reviews](https://www.kaggle.com/datasets/dewanakretarta/gojek-playstore-reviews/data). The goal is to classify user sentiments as **positive**, **neutral**, or **negative** using a combination of classical and deep learning NLP techniques.
 
-- Build and evaluate machine learning models (e.g., Logistic Regression, Naive Bayes, SVM).
+### 🚀 Objectives
 
-- Visualize sentiment trends and keyword insights.
+* Analyze user feedback on the Gojek mobile app to identify sentiment trends.
+* Compare the performance of various machine learning models:
 
-# 🛠️ Tools & Libraries
-- Python
+  * **SVM with TF-IDF**
+  * **SVM with Word Embedding (e.g., Word2Vec or FastText)**
+  * **IndoBERT (Pretrained Indonesian BERT model)**
+* Evaluate models using appropriate classification metrics.
 
-- Pandas, NumPy
+### 🛠️ Tools & Libraries
 
-- Scikit-learn, NLTK, Sastrawi
+* Python
+* Scikit-learn (SVM, TF-IDF)
+* Gensim / FastText (for word embedding)
+* Hugging Face Transformers (for IndoBERT)
+* Pandas, NumPy
+* Matplotlib, Seaborn
 
-- Matplotlib, Seaborn, WordCloud
+### 📊 Model Evaluation
 
-- (Optional) Google Play Scraper or custom review dataset
+Each model is assessed using:
 
-# 📊 Model Performance
-- Includes evaluation using metrics such as:
+* Accuracy
+* Precision, Recall, F1-score
+* Confusion Matrix
+* (Optional) ROC-AUC for binary scenarios
 
-- Accuracy
+### 📂 Project Structure
 
-- Precision, Recall, F1-score
+```
+📦gojek-sentiment-analysis
+ ┣ 📁data/               # Preprocessed and raw data
+ ┣ 📁notebooks/          # Jupyter notebooks for each model
+ ┣ 📁models/             # Saved models (if any)
+ ┣ 📜README.md
+ ┣ 📜requirements.txt
+ ┣ 📜main.py             # Script for training/testing models
+```
 
-- Confusion Matrix
+### 📌 Status
+
+✅ SVM + TF-IDF and IndoBERT implemented and evaluated
+🔧 Currently optimizing word embedding and model performance
+
+### 📄 License
+
+This project is open-source under the MIT License. Contributions and feedback are welcome!
+
+---
