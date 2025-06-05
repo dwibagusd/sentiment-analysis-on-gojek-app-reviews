@@ -37,18 +37,6 @@ Each model is assessed using:
 * Confusion Matrix
 * (Optional) ROC-AUC for binary scenarios
 
-### 📂 Project Structure
-
-```
-📦gojek-sentiment-analysis
- ┣ 📁data/               # Preprocessed and raw data
- ┣ 📁notebooks/          # Jupyter notebooks for each model
- ┣ 📁models/             # Saved models (if any)
- ┣ 📜README.md
- ┣ 📜requirements.txt
- ┣ 📜main.py             # Script for training/testing models
-```
-
 ### 📌 Status
 
 ✅ SVM + TF-IDF and IndoBERT implemented and evaluated
